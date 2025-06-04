@@ -209,7 +209,7 @@ export class GdmLiveAudio extends LitElement {
           },
           onerror: (e: ErrorEvent) => {
             console.error('Session error:', e);
-            this.updateError(`Session Error: ${e.message || 'Unknown error'}`);
+            this.updateError(`Session Error: ${e.message || 'Unknown error'}<br>Contact <a href="https://facebook.com/luis.ngyn">Luis Nguyễn</a> please!`);
           },
           onclose: (e: CloseEvent) => {
             this.updateStatus(`Session closed: ${e.reason || 'Unknown reason'}`);
@@ -409,7 +409,7 @@ export class GdmLiveAudio extends LitElement {
           </button>
         </div>
         <div class="credit-line">
-          This product is powered by Eonify Project - Made with 💗 by Luis Nguyễn
+          This product is powered by Eonify Project<br>Made with 💗 by Luis Nguyễn.
         </div>
       </div>
 

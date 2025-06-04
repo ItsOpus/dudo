@@ -1,3 +1,12 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -7,7 +16,7 @@ body {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%; /* Changed from 100vh to 100% to respect html height */
   width: 100vw;
   overflow: hidden; /* Prevent scrollbars */
 }

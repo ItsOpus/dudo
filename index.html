@@ -1,17 +1,54 @@
-<script type="importmap">
-  {
-    "imports": {
-      "lit": "https://esm.sh/lit@^3.3.0",
-      "lit/": "https://esm.sh/lit@^3.3.0/",
-      "@lit/context": "https://esm.sh/@lit/context@^1.1.5",
-      "@google/genai": "https://esm.sh/@google/genai@^0.9.0",
-      "three": "https://esm.sh/three@^0.176.0",
-      "three/": "https://esm.sh/three@^0.176.0/"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Dudo AI: Ask Me Anything!</title>
+  <meta name="description" content="Experience real-time voice conversations with Dudo, your friendly AI assistant powered by Google Gemini. Features interactive 3D audio visualizations and a unique, empathetic personality. Ask anything!">
+  <meta name="theme-color" content="#1a1a2e">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn.glitch.global/bd12c6ca-d1a7-4026-9fe5-71add18ba621/Gemini_Generated_Image_wfz5xxwfz5xxwfz5%20(1).png?v=1749007472023" type="image/png">
+  <link rel="apple-touch-icon" href="https://cdn.glitch.global/bd12c6ca-d1a7-4026-9fe5-71add18ba621/Gemini_Generated_Image_wfz5xxwfz5xxwfz5%20(1).png?v=1749007472023">
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/bd12c6ca-d1a7-4026-9fe5-71add18ba621/Gemini_Generated_Image_wfz5xxwfz5xxwfz5%20(1).png?v=1749007472023">
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="dudoai.netlify.app"> <!-- TODO: Update this URL when deployed -->
+  <meta property="og:title" content="Dudo AI: Live Audio Chat - Ask Me Anything!">
+  <meta property="og:description" content="Chat with Dudo, your friendly AI assistant! Real-time voice, 3D visuals, and a unique personality.">
+  <meta property="og:image" content="https://cdn.glitch.global/bd12c6ca-d1a7-4026-9fe5-71add18ba621/Ask%20me%20anything.png?v=1749007474148">
+  <meta property="og:image:alt" content="Dudo AI Assistant ready to chat, with text 'Ask me anything'.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="dudoai.netlify.app"> <!-- TODO: Update this URL when deployed -->
+  <meta property="twitter:title" content="Dudo AI: Live Audio Chat - Ask Me Anything!">
+  <meta property="twitter:description" content="Chat with Dudo, your friendly AI assistant! Real-time voice, 3D visuals, and a unique personality.">
+  <meta property="twitter:image" content="https://cdn.glitch.global/bd12c6ca-d1a7-4026-9fe5-71add18ba621/Ask%20me%20anything.png?v=1749007474148">
+  <meta property="twitter:image:alt" content="Dudo AI Assistant ready to chat, with text 'Ask me anything'.">
+
+  <link rel="stylesheet" href="index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "lit": "https://esm.sh/lit@^3.3.0",
+        "lit/": "https://esm.sh/lit@^3.3.0/",
+        "@lit/context": "https://esm.sh/@lit/context@^1.1.5",
+        "@google/genai": "https://esm.sh/@google/genai@^0.9.0",
+        "three": "https://esm.sh/three@^0.176.0",
+        "three/": "https://esm.sh/three@^0.176.0/"
+      }
     }
-  }
-</script>
+  </script>
+  <script type="module" src="index.tsx" defer></script>
+<link rel="stylesheet" href="/index.css">
+</head>
 <body>
   <gdm-live-audio></gdm-live-audio>
 <script type="module" src="/index.tsx"></script>
 </body>
-<link rel="stylesheet" href="/index.css">
+</html>
